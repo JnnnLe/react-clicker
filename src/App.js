@@ -11,7 +11,7 @@ class App extends Component {
     this.handleDecClick = this.handleDecClick.bind(this)
     this.handleResetClick = this.handleResetClick.bind(this)
   }
-  handleIncClick(event) {
+  handleIncClick() {
     this.setState({
       number: this.state.number +1
     })
@@ -34,14 +34,14 @@ class App extends Component {
   render() {
     return (
       <div className="clicker">
-        <div className="number">
-        <h1>{this.state.number}</h1>
 
+        <div className="number">
+          <h1>{this.state.number}</h1>
         </div>
 
-        <button onClick={this.handleDecClick}>-</button>
-        <button onClick={this.handleResetClick}>Reset</button>
-        <button onClick={this.handleIncClick}>+</button>
+          <button onClick={this.handleDecClick}>-</button>
+          <button onClick={this.handleResetClick}>Reset</button>
+          <button onClick={this.handleIncClick}>+</button>
 
       </div>
     );
