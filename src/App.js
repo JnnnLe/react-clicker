@@ -21,14 +21,12 @@ class App extends Component {
     this.setState({
       number: this.state.number -1
     })
-
   };
 
   handleResetClick() {
     this.setState({
       number: 0
     })
-
   };
 
   render() {
